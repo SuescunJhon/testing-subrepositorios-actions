@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            servicio-A
 
       - name: change directory
         run: cd servicio-A 
