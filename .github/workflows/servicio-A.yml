@@ -1,0 +1,19 @@
+name: Run Serivicio A
+on:
+  pull_request:
+    paths:
+      - 'servicio-A/**'
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Run index
+        run: node index.js
