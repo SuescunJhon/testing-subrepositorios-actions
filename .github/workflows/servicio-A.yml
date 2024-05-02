@@ -16,8 +16,8 @@ jobs:
             .github
             servicio-A
 
-      - name: change directory
-        run: cd servicio-A 
+      - name: list files
+        run: ls
 
       - name: Install Dependencies
         run: npm install
