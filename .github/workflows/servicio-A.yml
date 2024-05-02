@@ -12,6 +12,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: change directory
+        run: cd servicio-A 
+
       - name: Install Dependencies
         run: npm install
         
